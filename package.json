@@ -52,5 +52,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://peppy-cat-b12d38.netlify.app"
+  "proxy": "http://localhost:3002"
 }
