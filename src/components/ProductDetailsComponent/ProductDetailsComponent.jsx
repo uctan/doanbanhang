@@ -123,16 +123,16 @@ const ProductDetailsComponent = ({idProduct}) => {
                   <Image src={productsDetail?.image} alt ="image small"  preview ={false}/>
                 </WrapperCollStyleImage>
                 <WrapperCollStyleImage  span={4}>
-                  <Image src={productsDetail} alt ="image small"  preview ={false}/>
+                  <Image src={productsDetail?.image} alt ="image small"  preview ={false}/>
                 </WrapperCollStyleImage>
                 <WrapperCollStyleImage  span={4}>
-                  <Image src={productsDetail} alt ="image small"  preview ={false}/>
+                  <Image src={productsDetail?.image} alt ="image small"  preview ={false}/>
                 </WrapperCollStyleImage>
                 <WrapperCollStyleImage  span={4}>
-                  <Image src={productsDetail} alt ="image small"  preview ={false}/>
+                  <Image src={productsDetail?.image} alt ="image small"  preview ={false}/>
                 </WrapperCollStyleImage>
                 <WrapperCollStyleImage  span={4}>
-                  <Image src={productsDetail} alt ="image small"  preview ={false}/>
+                  <Image src={productsDetail?.image} alt ="image small"  preview ={false}/>
                 </WrapperCollStyleImage>
                 
               </Row>
@@ -196,7 +196,7 @@ const ProductDetailsComponent = ({idProduct}) => {
               
           </Col>
           <CommentComponent
-            dataHref={process.env.REACT_APP_IS_LOCAL ? "https://developers.facebook.com/docs/plugins/comments#configurator": window.location.href} width= "1500" />
+            dataHref={process.env.REACT_APP_IS_LOCAL ? "https://developers.facebook.com/docs/plugins/comments#configurator": window.location.href} width= "1220" />
       </Row>
       
     // </Loading>

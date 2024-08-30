@@ -33,13 +33,13 @@ const CardComponent = (props) => {
                   <StarFilled style={{fontSize: '12px',color:'yellow'}}/>
                 </span>
                 <WrapperStyleTextSell>
-                    | Đã bán {selled || 1000}+
+                    | Đã bán {selled || 0}+
                 </WrapperStyleTextSell>
             </WrapperReportText> 
             <WrapperPriceText>
                 <span style={{marginRight:'8px'}}>{convertPrice(price)}</span>
                 < WrapperDiscountText>
-                - {discount || 5} %
+                - {discount || 0} %
                 </WrapperDiscountText>
               </WrapperPriceText>
           </WrapperCardStyle>
