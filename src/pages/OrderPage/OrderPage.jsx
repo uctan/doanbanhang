@@ -61,7 +61,10 @@ const OrderPage = () => {
       return 10000
     }else if(priceMemo >= 500000 || order?.orderItemsSlected?.length === 0) {
       return 0
-    } else {
+    } else if (priceMemo > 600000) {
+      return 0
+    }
+    else {
       return 20000
     }
   },[priceMemo])

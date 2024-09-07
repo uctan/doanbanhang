@@ -80,12 +80,16 @@ const PaymentPage = () => {
     return 0
   },[order])
 
+  // log bug lat ve chinh bai
   const diliveryPriceMemo = useMemo(() => {
-    if(priceMemo > 200000){
+    if(priceMemo > 200000 && priceMemo < 500000){
       return 10000
     }else if(priceMemo === 0 ){
       return 0
-    }else {
+    }else if(priceMemo > 600000){
+      return 0
+    }
+    else {
       return 20000
     }
   },[priceMemo])
