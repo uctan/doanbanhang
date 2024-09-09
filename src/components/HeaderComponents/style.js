@@ -11,11 +11,10 @@ width:1270px;
 padding:10px 0
 `
 
-export const WrapperTextHeader = styled.span`
-font-size:18px;
-color:#fff;
-font-weight: bold;
-text-align: left;
+export const WrapperImageHeader = styled.img`
+width: 170px; 
+height: 50px; 
+cursor: pointer;
 `
 export const WrapperHeaderAccount = styled.div`
 display: flex;

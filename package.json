@@ -17,6 +17,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-html-table-to-excel": "^2.0.0",
+    "react-icons": "^5.3.0",
     "react-paypal-button-v2": "^2.6.3",
     "react-redux": "^9.0.4",
     "react-router-dom": "^6.21.1",
@@ -52,5 +53,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://doanbanhangbe.onrender.com"
+  "proxy": "https://doanbanhangbe.onrender.com",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
 }

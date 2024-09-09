@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Col,Badge, Popover } from 'antd';
 
 import ButtonInputSearch from '../ButtonInputSearch/ButtonInputSearch';
-import { WrapperContentPopup, WrapperHeader, WrapperHeaderAccount, WrapperTextHeader, WrappperTextHeaderSmall } from './style';
+import { WrapperContentPopup, WrapperHeader, WrapperHeaderAccount, WrapperImageHeader, WrappperTextHeaderSmall } from './style';
 import {useNavigate } from 'react-router-dom';
 import {
   UserOutlined,
@@ -15,6 +15,7 @@ import * as UserService from '../../services/UserService'
 import { resetUser } from '../../redux/slides/userSlide'
 import Loading from '../LoadingComponents/Loading';
 import { searchProduct } from '../../redux/slides/productSlide';
+import logoweb from '../../assets/images/logoweb.png'
 
 const HeaderComponents = ( {isHiddenSearch = false, isHiddenCart = false}) => {
 
@@ -82,9 +83,12 @@ const HeaderComponents = ( {isHiddenSearch = false, isHiddenCart = false}) => {
     <div style={{width:'100%',justifyContent:'center',background:'rgb(26,148,255)',display:'flex'}} >
           <WrapperHeader style={{justifyContent: isHiddenSearch && isHiddenSearch ? 'space-between' : 'unset'}}  >
             <Col span={5}>
-              <WrapperTextHeader style={{cursor:'pointer'}} onClick={() => {navigate('/')}}>
-              Nguyễn Trần Duy Tân
-              </WrapperTextHeader>
+            <WrapperImageHeader 
+              src={logoweb}
+              alt="Nguyễn Trần Duy Tân" 
+              style={{ cursor: 'pointer' }} 
+              onClick={() => { navigate('/') }} 
+            />
             </Col>
             {!isHiddenSearch && (
               <Col span={13}>

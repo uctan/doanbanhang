@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import slider1  from '../../assets/images/1.png'
 import slider2  from '../../assets/images/2.png'
 import slider3  from '../../assets/images/3.png'
+import Image1  from '../../assets/images/bannerqc.png'
 import { WrapperButtonMore, WrapperProducts, WrapperTypeProduct } from './style'
 import TypeProduct from '../../components/TypeProduct/TypeProduct'
 import SliderComponent from '../../components/SliderComponent/SliderComponent'
@@ -11,6 +12,9 @@ import * as ProductService from '../../services/ProductService'
 import {useSelector} from 'react-redux'
 import Loading from '../../components/LoadingComponents/Loading'
 import { useDebounce } from '../../hooks/useDebounce'
+import Category from '../../components/category/category'
+import Category2 from '../../components/category/category2'
+import Service from '../../components/servicescomponent/service'
 
 
 const HomePage = () => {
@@ -77,7 +81,7 @@ const HomePage = () => {
       </WrapperTypeProduct>
     </div>
     <div className='body' style={{width:'100%',backgroundColor:'#efefef'}}>
-    <div id="container" style={{height:'1000px',margin:'0 auto', width:'1270px'}}>
+    <div id="container" style={{height:'100%',margin:'0 auto', width:'1270px'}}>
         <SliderComponent arrImages = {[slider1,slider2,slider3]} />
         <WrapperProducts>
           {products?.data?.map((product) => {
@@ -113,6 +117,14 @@ const HomePage = () => {
                 onClick ={() => setLimit(prev => prev + 6)}
                 />
           </div>
+          <Category/>
+          <Category2 style={{marginTop : '90px'}}/>
+          <Service/>
+          <img src={Image1} style={{
+                    
+                    width: '100%',
+                    height : '450px',
+                  }}/>
     </div>
     </div>
     

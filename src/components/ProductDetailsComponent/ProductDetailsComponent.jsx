@@ -196,7 +196,7 @@ const ProductDetailsComponent = ({idProduct}) => {
               
           </Col>
           <CommentComponent
-            dataHref={process.env.REACT_APP_IS_LOCAL ? "https://developers.facebook.com/docs/plugins/comments#configurator": window.location.href} width= "1220" />
+            dataHref={process.env.REACT_APP_IS_LOCAL ? "https://developers.facebook.com/docs/plugins/comments#configurator": window.location.href} width= "1120" />
       </Row>
       
     // </Loading>
