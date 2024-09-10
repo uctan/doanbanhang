@@ -15,6 +15,9 @@ import { useDebounce } from '../../hooks/useDebounce'
 import Category from '../../components/category/category'
 import Category2 from '../../components/category/category2'
 import Service from '../../components/servicescomponent/service'
+import Blog from '../../components/blogComponents/blog'
+import Partners from '../../components/parrternsComponents/Partners'
+import Fotter from '../../components/fotterComponents/Fotter'
 
 
 const HomePage = () => {
@@ -120,12 +123,16 @@ const HomePage = () => {
           <Category/>
           <Category2 style={{marginTop : '90px'}}/>
           <Service/>
-          <img src={Image1} style={{
-                    
-                    width: '100%',
-                    height : '450px',
-                  }}/>
+          <img src={Image1} style={{        
+            width: '100%',
+            height : '450px',
+            }}
+          />
+          <Blog style={{marginTop : '90px'}}/>
+          <Partners/>
+         
     </div>
+    <Fotter/>
     </div>
     
   </Loading>

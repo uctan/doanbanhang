@@ -38,7 +38,7 @@ const DetailsOrderPage = () => {
 
   return (
    <Loading isLoading={isLoading}>
-     <div style={{width: '100%', height: '100%', background: '#f5f5fa',marginTop    : '-14px'}}>
+     <div style={{width: '100%', height: '100%', background: '#f5f5fa',marginTop    : '0'}}>
       <div style={{ width: '1270px', margin: '0 auto', height: '1270px'}}>
         <h4>Chi tiết đơn hàng</h4>
         <WrapperHeaderUser>
